@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
 import { ThemeProvider } from "@/components/theme-provider";
 import { siteMetadata } from "../data/siteMetadata";
 import { Navbar } from "../components/Navbar";
-import  Home  from "./page";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -23,26 +22,19 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children
+  children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          storageKey="your-storage-key-theme" // Optional. The default is "theme"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <Navbar />
-          <Home />
+        <ThemeProvider>
           {children}
-          <Analytics />
+          <Navbar />
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
-  )
+  );
 }

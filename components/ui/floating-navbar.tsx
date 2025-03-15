@@ -8,7 +8,7 @@ import {
 } from "motion/react";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-import { ModeToggle } from "../toggle";
+import { ThemeToggle } from "../theme-toggle";
 
 export const FloatingNav = ({
   navItems,
@@ -74,7 +74,7 @@ export const FloatingNav = ({
           </Link>
         ))}
         
-          <ModeToggle />
+          <ThemeToggle />
        
       </motion.div>
     </AnimatePresence>
