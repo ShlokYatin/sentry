@@ -9,7 +9,7 @@ export function SpotlightNew() {
       <Spotlight />
       <div className="p-4 max-w-7xl mx-auto relative z-10 w-full md:pt-0 text-center">
         <ProfilePic />
-        <h1 className="text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-500 to-neutral-900 dark:from-neutral-50 dark:to-neutral-400 bg-opacity-50 pt-4 pb-4">
+        <h1 className="text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-500 to-neutral-900 dark:from-neutral-50 dark:to-neutral-400 bg-opacity-50 pt-2 pb-4  border-t border-l border-r border-b border-neutral-300 dark:border-neutral-600">
           Hey, I'm Shlok! <br />
           Welcome to my corner of the internet!
         </h1>
