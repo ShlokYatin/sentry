@@ -1,12 +1,12 @@
 import { SpotlightNew } from "@/components/Spotlight";
 import React from "react";
 
-export default function Home({ children }: { children: React.ReactNode }) {
+export default function Home() {
   return (
     <main>
       <SpotlightNew />
       <div className="content">
-        {children}
+        {/* Add your content here */}
       </div>
     </main>
   );
