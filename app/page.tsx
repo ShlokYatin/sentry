@@ -1,4 +1,6 @@
 import { SpotlightNew } from "@/components/Spotlight";
+import { TextHoverEffect } from "@/components/TextHoverEffect";
+import BentoGrid from "@/components/bento-grid";
 import React from "react";
 
 export default function Home() {
@@ -6,7 +8,8 @@ export default function Home() {
     <main>
       <SpotlightNew />
       <div className="content">
-        {/* Add your content here */}
+        <TextHoverEffect />
+        <BentoGrid />
       </div>
     </main>
   );
